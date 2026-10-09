@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusGo 課表</title>
+
+<link rel="manifest" href="/campusgo/manifest.json">
+<meta name="theme-color" content="#2563eb">
+
+    <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+
+<body>
+
+<header class="app-header">
+    <h1>CampusGo 校園通</h1>
+</header>
+
+<main>
+    <h2>📅 我的課表</h2>
+
+<div class="schedule-table">
+
+    <div class="schedule-row schedule-head">
+        <span>時間</span>
+        <span>星期一</span>
+        <span>星期二</span>
+        <span>星期三</span>
+        <span>星期四</span>
+        <span>星期五</span>
+    </div>
+
+    <div class="schedule-row">
+        <span>08:00</span>
+        <span>
+    英文
+    <small>A301</small>
+</span>
+        <span></span>
+        <span>數學</span>
+        <span></span>
+        <span>程式設計</span>
+    </div>
+
+    <div class="schedule-row">
+        <span>10:00</span>
+        <span></span>
+        <span>資料庫</span>
+        <span></span>
+        <span>英文</span>
+        <span></span>
+    </div>
+
+    <div class="schedule-row">
+        <span>13:00</span>
+        <span>體育</span>
+        <span></span>
+        <span>程式設計</span>
+        <span></span>
+        <span>數學</span>
+    </div>
+
+</div>
+
+<button id="reset-schedule" type="button">重設課表</button>
+</main>
+
+<nav class="tab-bar">
+    <a href="index.html" class="tab">🏠<span>首頁</span></a>
+    <a href="board.php" class="tab">💬<span>留言板</span></a>
+    <a href="weather.html" class="tab">🌤️<span>天氣</span></a>
+</nav>
+
+<script src="js/schedule.js"></script>
+
+</body>
+</html>

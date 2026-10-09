@@ -1,0 +1,6 @@
+# 機密設定檔
+config.php
+
+# 系統雜檔
+.DS_Store
+*.log

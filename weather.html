@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusGo 天氣</title>
+
+    <link rel="manifest" href="/campusgo/manifest.json">
+<meta name="theme-color" content="#2563eb">
+
+    <link rel="stylesheet" href="css/style.css?v=5">
+    <script src="js/weather.js" defer></script>
+</head>
+
+<body>
+
+    <main class="page active">
+        <h1>今日天氣</h1>
+
+        <select id="citySelect" aria-label="選擇城市">
+            <option value="臺東縣">臺東縣</option>
+            <option value="臺北市">臺北市</option>
+            <option value="高雄市">高雄市</option>
+        </select>
+
+<button
+    type="button"
+    id="btn-locate"
+>
+    📍 用我的位置
+</button>
+
+<div id="loading" class="hidden"></div>
+
+<div id="errorBox" class="hidden"></div>
+
+<div id="weatherCard"></div>
+
+</main>
+
+<nav class="tab-bar">
+    <a href="index.html" class="tab">🏠<span>首頁</span></a>
+    <a href="board.php" class="tab">💬<span>留言板</span></a>
+    <a href="weather.html" class="tab active">🌤️<span>天氣</span></a>
+</nav>
+
+</body>
+
+</html>

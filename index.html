@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusGo 校園通</title>
+
+<meta
+    name="description"
+    content="CampusGo 校園通：整合待辦事項、天氣查詢、校園留言板、校園資訊與課表功能的校園 PWA。"
+>
+
+    <link rel="manifest" href="/campusgo/manifest.json">
+
+<link rel="apple-touch-icon" href="/campusgo/img/apple-touch-icon.png">
+
+<meta name="theme-color" content="#2563eb">
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <script src="js/app.js?v=4" defer></script>
+</head>
+<body>
+
+<div id="offline-bar" hidden>
+    📡 目前離線，顯示的資料可能不是最新內容
+</div>
+
+<header class="app-header">
+    <h1>CampusGo 校園通</h1>
+    <button id="theme-toggle" aria-label="切換深色模式">🌙</button>
+</header>
+<main>
+    <section id="page-home" class="page active">
+        <p id="greeting">歡迎使用 CampusGo！</p>
+
+        <div class="menu-grid">
+    <a href="todo.php" class="menu-card">待辦</a>
+    <a href="weather.html" class="menu-card">天氣</a>
+    <a href="board.php" class="menu-card">留言板</a>
+    <a href="campus.html" class="menu-card">校園資訊</a>
+    <a href="schedule.html" class="menu-card schedule-card">📅 課表</a>
+</div>
+    </section>
+
+<section id="page-weather" class="page">
+    <h2>天氣資訊</h2>
+    <p>兩週後開工！</p>
+</section>
+</main>  
+<nav class="tab-bar" aria-label="主要導覽">
+    <a href="#" class="tab active" data-target="page-home">
+        🏠<span>首頁</span>
+    </a>
+
+    <a href="todo.php" class="tab">
+    ✅<span>待辦</span>
+</a>
+
+    <a href="weather.html" class="tab">
+    🌤️<span>天氣</span>
+</a>
+</nav>
+</body>
+</html>
