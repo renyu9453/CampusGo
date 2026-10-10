@@ -69,7 +69,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
 <header class="app-header">
-    <h1>CampusGo 校園通</h1>
+<h1>
+    <a href="/campusgo/" class="home-link">CampusGo 校園通</a>
+</h1>
 </header>
 
 <main class="page active">
